@@ -42,6 +42,9 @@ body, html{
 /*    box-shadow:0 0 10px 0px rgba(0,0,0,0.15);*/
     box-shadow:0 0 10px 0px rgba(0,0,0,0.1);
 
+
+/*background:#828996;*/
+/*color:white;*/
     
 
 }
@@ -59,27 +62,60 @@ body, html{
     font-family: 'Josefin Slab', serif;
 /*    padding:0 30px;*/
     font-family: 'PT Sans', sans-serif;
-    letter-spacing: 3px;
-    font-size:18px;
+    letter-spacing: 1px;
+    font-size:14px;
     color:#404040;
+    color:black;
     
-        font-family: 'Scope One', serif;
-        font-family: 'Pompiere', cursive;
-    font-family: 'Muli', sans-serif;
-    font-family: 'Waiting for the Sunrise', cursive;
+    opacity:0.65;
+
     
-    font-family: 'Amatic SC', cursive;
+    
+/*        font-family: 'Scope One', serif;*/
+/*        font-family: 'Pompiere', cursive;*/
+/*    font-family: 'Muli', sans-serif;*/
+/*    font-family: 'Waiting for the Sunrise', cursive;*/
+    
+/*    font-family: 'Amatic SC', cursive;*/
+    
+/*    background:#828996;*/
+/*    color:white;*/
 
 }
 .number{
     position:absolute;
     right:40px;
+    color:inherit;
+    
 }
 .mail{
     position:absolute;
     right:180px;
+    color:inherit;
+}
+.mail:hover{
+    color:#d64800;
 }
 
+.icons{
+    height:100%;
+/*    padding:30px;*/
+    position:absolute;
+/*    top:50%;*/
+    left:30px;
+    line-height:38px;
+    font-size:18px;
+
+}
+.icon{
+    padding:0 5px;
+    cursor:pointer;
+}
+
+.icon:hover{
+/*    color:#dc6c25;*/
+    color:#d64800;
+}
 
 
 .middle{
@@ -94,12 +130,12 @@ body, html{
 }
 
 .picture{
-/*    width:90%;*/
-width:100%;
-height:100%;
-object-fit: cover;
-/*min-height:100%;*/
-height:calc(100% - 35px);
+    /*    width:90%;*/
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    /*min-height:100%;*/
+    height:calc(100% - 35px);
 
 /*    min-width:100%*/
 /*    min-height:100%;*/
@@ -231,10 +267,12 @@ a {
     padding:0 15px;
 /*    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);*/
     transition: color 0.2s ease-in-out;
-
-    text-transform: capitalize;
+    
+/*    text-transform: capitalize;*/
 
 }
+
+
 
 
 
