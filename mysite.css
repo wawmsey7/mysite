@@ -543,6 +543,7 @@ a {
 
     #menuitems{
         line-height:45px;
+        padding-bottom: 5px;
     }
     
     .menu_open{ 
