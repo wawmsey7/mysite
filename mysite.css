@@ -1,5 +1,4 @@
 
-
 :root{
     --menu_h: 80px;
     --bot_h: 35px;
@@ -289,7 +288,7 @@ body, html{
 }
 
 #button_wrap{
-    height:100%;
+    height:30px;
     width:50px;
     position:absolute;
     left:50%;
@@ -491,7 +490,7 @@ a {
     #menu{
         transition: height 0.3s ease-in-out;
         width:100%;
-        height:0px;
+/*        height:0px;*/
         position:absolute;
         top:var(--menu_h);
         overflow:hidden;
@@ -500,6 +499,11 @@ a {
         margin:0 0 10 0;
 /*        box-shadow:0 0 10px 0px rgba(0,0,0,0.1);*/
     }
+    
+    .menu_open{ height:320px; }
+    .menu_closed{ height:0px; }
+    
+    
     
     #button_block{
         display:block;
@@ -527,6 +531,8 @@ a {
 }
 
 
+
+
 @media screen and (max-width: 350px) {
     
     /*    .bottom{ height:90px}*/
@@ -550,6 +556,7 @@ a {
 
 
 }
+
 
 
 
