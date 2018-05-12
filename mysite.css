@@ -4,8 +4,11 @@
     --bot_h: 35px;
 
 /*    --bg:hsl(0, 0%, 60%);*/
-    --bg:hsl(0, 0%, 97%);
-    --bg2:hsl(0, 0%, 95%);
+/*    --bg:hsl(0, 0%, 97%);*/
+    --bg:hsl(0, 0%, 96%);
+/*    --bg2:hsl(0, 0%, 95%);*/
+    --bg2:hsl(0, 0%, 96%);
+
 
     
 /*    --col:hsl(0, 0%, 100%);*/
@@ -533,25 +536,32 @@ a {
 
 
 
-
 @media screen and (max-width: 350px) {
     
+
+    #menubutton line{
+        transition:none;
+    }
+
+    #menubutton{
+        transition:none;
+    }
+
     .item{
         height:45px;
-        /*        z-index:50;*/
     }
 
     #menuitems{
         line-height:45px;
         padding-bottom: 5px;
     }
-    
+
+
     .menu_open{ 
         height:230px;
-    /*    overflow: auto; */
-    /*    display: block;*/
-    /*    overflow: auto;*/
     }
+
+
 }
 
 
