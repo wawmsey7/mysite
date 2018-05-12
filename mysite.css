@@ -538,17 +538,17 @@ a {
     /*    .bottom{ height:90px}*/
 
     .item{
-        height:52px;
+        height:47px;
         /*        z-index:50;*/
     }
 
     #menuitems{
-        line-height:52px;
+        line-height:47px;
     }
 
 
     .menu_open{ 
-        height:270px;
+        height:245px;
     /*    overflow: auto; */
     /*    display: block;*/
     /*    overflow: auto;*/
@@ -556,6 +556,7 @@ a {
 
 
 }
+
 
 
 
