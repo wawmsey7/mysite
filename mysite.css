@@ -314,12 +314,12 @@ body, html{
     stroke-width:1.5;
     stroke-linecap:round;
     
-    transition:transform 0.3s;
+/*    transition:transform 0.3s;*/
     transform-origin: 0% 0%;
 }
 
 #menubutton line{
-    transition:opacity 0.3s, transform 0.3s;
+/*    transition:opacity 0.3s, transform 0.3s;*/
     vector-effect:non-scaling-stroke;
 }
 
@@ -539,13 +539,13 @@ a {
 @media screen and (max-width: 350px) {
     
 
-    #menubutton line{
-        transition:none;
-    }
-
-    #menubutton{
-        transition:none;
-    }
+/*    #menubutton line{*/
+/*        transition:none;*/
+/*    }*/
+/**/
+/*    #menubutton{*/
+/*        transition:none;*/
+/*    }*/
 
     .item{
         height:45px;
@@ -563,7 +563,6 @@ a {
 
 
 }
-
 
 
 
