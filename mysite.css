@@ -533,28 +533,24 @@ a {
 
 
 
+
 @media screen and (max-width: 350px) {
     
-    /*    .bottom{ height:90px}*/
-
     .item{
-        height:47px;
+        height:45px;
         /*        z-index:50;*/
     }
 
     #menuitems{
-        line-height:47px;
+        line-height:45px;
     }
-
-
+    
     .menu_open{ 
-        height:245px;
+        height:235px;
     /*    overflow: auto; */
     /*    display: block;*/
     /*    overflow: auto;*/
     }
-
-
 }
 
 
