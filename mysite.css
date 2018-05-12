@@ -1,6 +1,9 @@
 
+
 :root{
     --menu_h: 80px;
+    --bot_h: 35px;
+
 /*    --bg:hsl(0, 0%, 60%);*/
     --bg:hsl(0, 0%, 97%);
     --bg2:hsl(0, 0%, 95%);
@@ -20,6 +23,9 @@ body, html{
     width:100%;
 }
 
+/*body {*/
+/*    height:100%;*/
+/*}*/
 
 
 .head{
@@ -64,7 +70,7 @@ body, html{
 .bottom{
     position:absolute;
     bottom:0;
-    height:35px;
+    height:var(--bot_h);
     background:white;
     background:var(--bg2);
     width:100%;
@@ -136,6 +142,9 @@ body, html{
 .middle{
     position:relative;
     height:calc(100% - 80px);
+    
+    height:calc(100% - var(--menu_h) - var(--bot_h));
+
 /*    background:#eee;*/
 }
 .album{
@@ -151,7 +160,7 @@ body, html{
     height:100%;
     object-fit: cover;
     /*min-height:100%;*/
-    height:calc(100% - 35px);
+    height:100%;
 
 /*    min-width:100%*/
 /*    min-height:100%;*/
@@ -423,11 +432,13 @@ a {
 @media screen and (max-width: 450px) {
     
     :root{ --menu_h: 147px; }
+    :root{ --bot_h: 75px; }
+
 
     
     .head a { padding:0 8px }
     
-    .bottom{ height:75px}
+/*    .bottom{ height:75px}*/
     
     .name{
         padding:25 0 15 0;
@@ -514,11 +525,5 @@ a {
     }
 
 }
-
-
-
-
-
-
 
 
