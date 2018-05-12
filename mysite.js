@@ -113,7 +113,7 @@ var nav={
     pos:600,
     type:2,
     open:0,
-    height:[0, 315],
+    height:[0, 320],
 }
 
 
