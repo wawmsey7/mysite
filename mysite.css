@@ -324,9 +324,9 @@ body, html{
 .rotate90{ transform: rotate(90deg); }
 .opacity0{ opacity:0; }
 
-.lineA{ transform: rotate(45deg) translate(0,50%) }
+.lineA{ transform: rotate(45deg) translate(0,7.5px) }
 .lineB{ opacity:0;  }
-.lineC{ transform: rotate(-45deg) translate(0,-50%)  }
+.lineC{ transform: rotate(-45deg) translate(0,-7.5px)  }
 
 
 .item a:hover{
