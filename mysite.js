@@ -113,7 +113,7 @@ var nav={
     pos:600,
     type:2,
     open:0,
-    height:[0, 157],
+    height:[0, 220],
 }
 
 
@@ -137,5 +137,10 @@ function togglemenu2(){
     }
     
 } 
+
+
+
+
+
 
 
