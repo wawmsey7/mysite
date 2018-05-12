@@ -113,14 +113,14 @@ var nav={
     pos:600,
     type:2,
     open:0,
-    height:[0, 320],
+//    height:[0, function(){return menuitems.offsetHeight} ],
 }
 
 
 
 function togglemenu2(){
     nav.open=+!nav.open
-    menu.style.height=nav.height[nav.open]
+//    menu.style.height=nav.height[nav.open]
     
     var lines=menubutton.children
     if(nav.open){
@@ -128,16 +128,22 @@ function togglemenu2(){
         lines[1].classList.add("lineB");
         lines[2].classList.add("lineC");
         menubutton.classList.add("rotate90");
+//        menu.style.height=menuitems.offsetHeight
+        menu.classList.remove("menu_closed");
+        menu.classList.add("menu_open");
         
     } else {
         lines[0].classList.remove("lineA");
         lines[1].classList.remove("lineB");
         lines[2].classList.remove("lineC");
         menubutton.classList.remove("rotate90");
+        menu.classList.remove("menu_open");
+        menu.classList.add("menu_closed");
+
+
     }
     
 } 
-
 
 
 
