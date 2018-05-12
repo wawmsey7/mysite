@@ -109,6 +109,33 @@ function touchmove(e){
 }
 
 
+var nav={
+    pos:600,
+    type:2,
+    open:0,
+    height:[0, 157],
+}
 
+
+
+function togglemenu2(){
+    nav.open=+!nav.open
+    menu.style.height=nav.height[nav.open]
+    
+    var lines=menubutton.children
+    if(nav.open){
+        lines[0].classList.add("lineA");
+        lines[1].classList.add("lineB");
+        lines[2].classList.add("lineC");
+        menubutton.classList.add("rotate90");
+        
+    } else {
+        lines[0].classList.remove("lineA");
+        lines[1].classList.remove("lineB");
+        lines[2].classList.remove("lineC");
+        menubutton.classList.remove("rotate90");
+    }
+    
+} 
 
 
