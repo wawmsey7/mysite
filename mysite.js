@@ -124,18 +124,18 @@ function togglemenu2(){
     
     var lines=menubutton.children
     if(nav.open){
-        lines[0].classList.add("lineA");
+        lines[0].classList.add("lineA");lines[0].classList.remove("lineA_");
         lines[1].classList.add("lineB");
-        lines[2].classList.add("lineC");
+        lines[2].classList.add("lineC");lines[2].classList.remove("lineC_");
         menubutton.classList.add("rotate90");
 //        menu.style.height=menuitems.offsetHeight
         menu.classList.remove("menu_closed");
         menu.classList.add("menu_open");
         
     } else {
-        lines[0].classList.remove("lineA");
+        lines[0].classList.remove("lineA");lines[0].classList.add("lineA_");
         lines[1].classList.remove("lineB");
-        lines[2].classList.remove("lineC");
+        lines[2].classList.remove("lineC");lines[2].classList.add("lineC_");
         menubutton.classList.remove("rotate90");
         menu.classList.remove("menu_open");
         menu.classList.add("menu_closed");
@@ -144,6 +144,7 @@ function togglemenu2(){
     }
     
 } 
+
 
 
 
