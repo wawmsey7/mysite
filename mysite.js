@@ -1,6 +1,4 @@
 
-
-
 //get document item by id
 function itemid(id){return document.getElementById(id)}
 
@@ -48,8 +46,16 @@ function nextphoto_loop(dir){
 }
 
 function clickphoto(){
-    nextphoto_loop()
+//    debugger
+//    nextphoto_loop()
 }
+
+classitems("album")[0].addEventListener('mouseup', function(e) {
+                                        var x=e.offsetX
+                                        var mid=e.path[0].offsetWidth/2
+                                        if(x<mid){ nextphoto_loop(-1) } else { nextphoto_loop(1) }
+                                        })
+
 
 function photoloop_pause(){
     var p=loop.pause=+!loop.pause
@@ -76,9 +82,9 @@ function keystuff(e){
 
 
 
-document.addEventListener('touchstart', touchstart, false);        
-document.addEventListener('touchmove', touchmove, false);
-document.addEventListener('touchend', touchend, false);
+//document.addEventListener('touchstart', touchstart, false);        
+//document.addEventListener('touchmove', touchmove, false);
+//document.addEventListener('touchend', touchend, false);
 
 
 var touch=false
@@ -144,6 +150,7 @@ function togglemenu2(){
     }
     
 } 
+
 
 
 
