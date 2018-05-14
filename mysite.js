@@ -1,5 +1,4 @@
 
-
 //get document item by id
 function itemid(id){return document.getElementById(id)}
 
@@ -72,8 +71,20 @@ function animreset(el) {
 
 classitems("album")[0].addEventListener('mouseup', function(e) {
                                         var x=e.offsetX
-                                        var mid=e.path[0].offsetWidth/2
-                                        if(x<mid){ nextphoto_loop(-1) } else { nextphoto_loop(1) }
+//                                        var mid=e.path[0].offsetWidth/2
+//                                        if(x<mid){ nextphoto_loop(-1) } else { nextphoto_loop(1) }
+                                        
+//                                        console.log(e)
+//                                        var third=e.path[0].offsetWidth/3
+                                        var third=e.currentTarget.offsetWidth/3
+
+                                        if(x<third){
+                                            nextphoto_loop(-1) 
+                                        } else if(x>(2*third)){
+                                            nextphoto_loop(1) 
+                                        } else {
+                                            photoloop_pause()
+                                        }
                                         })
 
 
@@ -177,9 +188,6 @@ function togglemenu2(){
     }
     
 } 
-
-
-
 
 
 
