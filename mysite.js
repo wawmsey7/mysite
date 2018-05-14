@@ -57,11 +57,15 @@ function nextphoto_loop(dir){
 
 function animreset(el) {
     el.style.animation = 'none';
-//    el.offsetHeight; /* trigger reflow */
+    el.parentElement.offsetHeight; /* trigger reflow */
     setTimeout(function() {
+//               console.log(el.style.animation)
 //               el.style.animation = null; 
+//               d=el
                el.style.animation= "example 1.4s"
-               })
+//               console.log(el.style.animation)
+
+               },1)
 }
 
 //function clickphoto(){
@@ -107,7 +111,7 @@ function photoloop_pause(){
 }
 
 
-document.onkeydown = keystuff
+document.onkeyup = keystuff
 
 function keystuff(e){
 //    console.log(e.keyCode)
@@ -188,6 +192,9 @@ function togglemenu2(){
     }
     
 } 
+
+
+
 
 
 
