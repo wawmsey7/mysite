@@ -160,7 +160,7 @@ width:calc( 100% - 50px );
     position:relative;
     height:100%;
 /*    background:hsl(0, 0%, 90%);*/
-    background:hsl(0, 0%, 70%);
+    background:hsl(0, 0%, 30%);
 
 /*    overflow:hidden;*/
 }
@@ -187,6 +187,8 @@ width:calc( 100% - 50px );
 /*    position:relative;*/
 /*    z-index:-1;*/
     transition: opacity 1s ease-in-out;
+/*    transition: opacity 0.7s ease-in-out;*/
+
 /*    content:url(assets/photos/tavi2/13.jpg);*/
 
     
@@ -420,13 +422,13 @@ a {
 }
 #pause{
     left:50%;
-    height:25px;
-    width:15px;
+    height:24px;
+    width:14px;
 }
 #play{
-    left:50%;
-    height:30px;
-    width:40px;
+    left:calc(50% + 3px);
+    height:25px;
+    width:20px;
 }
 @keyframes example {
     0%   {opacity:0.8;}
@@ -560,16 +562,16 @@ a {
         height:10px;
         left:calc(100% - 15px);
     }
-/*    #pause{*/
-/*        left:50%;*/
-/*        height:20px;*/
-/*        width:12px;*/
-/*    }*/
-/*    #play{*/
-/*        left:50%;*/
-/*        height:30px;*/
-/*        width:40px;*/
-/*    }*/
+    #pause{
+        left:50%;
+        height:18px;
+        width:11px;
+    }
+    #play{
+        left:calc(50% + 3px);
+        height:20px;
+        width:16px;
+    }
     
 }
 
@@ -725,6 +727,7 @@ a {
 
 
 }
+
 
 
 
