@@ -1,4 +1,5 @@
 
+
 //get document item by id
 function itemid(id){return document.getElementById(id)}
 
@@ -30,13 +31,23 @@ function nextphoto(dir=1){
     
     photos[loop.i].classList.remove("currentpic")
     
-    if(dir>0){ loop.i=(loop.i+1)%l } else { loop.i=(loop.i+l-1)%l }
+    if(dir>0){
+        loop.i=(loop.i+1)%l 
+    } else {
+        loop.i=(loop.i+l-1)%l
+    }
     
     photos[loop.i].classList.add("currentpic")    
 }
 
 
 function nextphoto_loop(dir){
+    
+    if(dir==1){ 
+        animreset(arrowr)
+    } else {
+        animreset(arrowl)
+    }
     
     nextphoto(dir)
     if(!loop.pause){
@@ -45,10 +56,19 @@ function nextphoto_loop(dir){
     }
 }
 
-function clickphoto(){
-//    debugger
-//    nextphoto_loop()
+function animreset(el) {
+    el.style.animation = 'none';
+//    el.offsetHeight; /* trigger reflow */
+    setTimeout(function() {
+//               el.style.animation = null; 
+               el.style.animation= "example 1.4s"
+               })
 }
+
+//function clickphoto(){
+////    debugger
+////    nextphoto_loop()
+//}
 
 classitems("album")[0].addEventListener('mouseup', function(e) {
                                         var x=e.offsetX
@@ -60,9 +80,16 @@ classitems("album")[0].addEventListener('mouseup', function(e) {
 function photoloop_pause(){
     var p=loop.pause=+!loop.pause
     if(p){ 
+        play.style.animation="none"
+        animreset(pause)
+        
         clearInterval(photoloop) 
     } else {
 //        nextphoto_loop(1)
+        
+        animreset(play)
+        pause.style.animation="none"
+        
         nextphoto()
         photoloop=setInterval(nextphoto, loop.time)
     }
@@ -150,6 +177,7 @@ function togglemenu2(){
     }
     
 } 
+
 
 
 
