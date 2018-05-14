@@ -1,6 +1,4 @@
 
-
-
 :root{
     --menu_h: 80px;
     --bot_h: 35px;
@@ -398,6 +396,45 @@ a {
 /*    padding:0px;*/
 /*}*/
 
+.arrow{
+    position:absolute;
+    top:50%;
+    fill:none;
+    /*    stroke:hsl(0, 0%, 35%);*/
+    stroke:hsl(0, 0%, 100%);
+    stroke-width:1.5;
+    stroke-linecap:round;
+    overflow:visible;
+    stroke-linejoin:round;
+    opacity:0;
+    /*    animation:example 1.4s;*/
+}
+
+#arrowl{
+    height:13px;
+    left:20px;
+}
+#arrowr{
+    height:13px;
+    left:calc(100% - 20px);
+}
+#pause{
+    left:50%;
+    height:25px;
+    width:15px;
+}
+#play{
+    left:50%;
+    height:30px;
+    width:40px;
+}
+@keyframes example {
+    0%   {opacity:0.8;}
+    30%   {opacity:0.8;}
+    100%   {opacity:0;}
+}
+
+
 @media screen and (min-width: 1250px) {
     
     body{ width:1200px; }
@@ -514,6 +551,25 @@ a {
 /*    #menuitems{right:0}*/
     .icons{left:20}
     .details{right:15}
+    
+    #arrowl{
+        height:10px;
+        left:15px;
+    }
+    #arrowr{
+        height:10px;
+        left:calc(100% - 15px);
+    }
+/*    #pause{*/
+/*        left:50%;*/
+/*        height:20px;*/
+/*        width:12px;*/
+/*    }*/
+/*    #play{*/
+/*        left:50%;*/
+/*        height:30px;*/
+/*        width:40px;*/
+/*    }*/
     
 }
 
@@ -669,7 +725,6 @@ a {
 
 
 }
-
 
 
 
